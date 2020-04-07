@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://amazon.in"/>
+    <classes>
+      <class name="com.amazon.testcases.Add_To_Cart">
+        <methods>
+          <include name="add_items_cart"/>
+          <include name="tearDownReport"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.amazon.testcases.Add_To_Cart -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

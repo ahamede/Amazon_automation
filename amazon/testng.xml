@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  		<parameter name="browser" value="Chrome" />		
+		<parameter name="url" value="https://amazon.in" />
+		<parameter name="email" value="ejaz_90@ymail.com" />		
+		<parameter name="password" value="jjaleell" />		
+		
+    <classes>
+      <class name="com.amazon.testcases.login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

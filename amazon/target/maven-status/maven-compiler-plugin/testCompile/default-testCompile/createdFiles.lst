@@ -1,0 +1,8 @@
+com\amazon\lib\BrowserFactory.class
+com\amazon\pages\loginpage.class
+com\amazon\testcases\Add_To_Cart.class
+com\amazon\lib\Helper.class
+com\amazon\lib\Utility.class
+com\amazon\lib\switchframes.class
+com\amazon\testcases\login.class
+com\amazon\pages\add_to_cart.class

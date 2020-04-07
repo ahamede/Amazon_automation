@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="81818" started-at="2020-04-07T12:04:58Z" finished-at="2020-04-07T12:06:20Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="81818" started-at="2020-04-07T12:04:58Z" finished-at="2020-04-07T12:06:20Z">
+      <class name="com.amazon.testcases.Add_To_Cart">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.amazon.testcases.Add_To_Cart@31a5c39e]" name="setup" is-config="true" duration-ms="36672" started-at="2020-04-07T17:34:58Z" finished-at="2020-04-07T17:35:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://amazon.in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="add_items_cart()[pri:0, instance:com.amazon.testcases.Add_To_Cart@31a5c39e]" name="add_items_cart" duration-ms="41911" started-at="2020-04-07T17:35:35Z" finished-at="2020-04-07T17:36:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_items_cart -->
+        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:com.amazon.testcases.Add_To_Cart@31a5c39e]" name="tearDownReport" is-config="true" duration-ms="2988" started-at="2020-04-07T17:36:17Z" finished-at="2020-04-07T17:36:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- com.amazon.testcases.Add_To_Cart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
