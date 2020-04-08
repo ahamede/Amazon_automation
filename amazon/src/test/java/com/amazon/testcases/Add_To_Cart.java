@@ -22,7 +22,7 @@ public class Add_To_Cart {
      String s=this.getClass().getSimpleName();
 	@BeforeTest
 	@Parameters({ "browser", "url" })
-	public  void setup(String browser, String url) {
+	public void setup(String browser, String url) {
 		driver = BrowserFactory.startBrowser(browser, url);
 		report = new ExtentReports(System.getProperty("user.dir") + "\\ExtentReportResults.html");
 		logger = report.startTest(s);

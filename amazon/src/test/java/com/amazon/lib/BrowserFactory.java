@@ -12,10 +12,13 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 public class BrowserFactory {
 
 	static WebDriver driver;
-	
+	public static ExtentTest logger;
 
 
 	public static WebDriver startBrowser(String browser, String url) {
@@ -90,11 +93,11 @@ public class BrowserFactory {
 			Reporter.log("Incorrect 'Web Browser' name provided");
 
 		}
-		driver.navigate().to(url);
-	    
+		driver.navigate().to(url);    
+
 return driver;
 	}
-
+`
 
 
 
