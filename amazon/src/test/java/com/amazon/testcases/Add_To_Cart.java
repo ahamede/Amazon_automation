@@ -33,6 +33,7 @@ public class Add_To_Cart {
 		add_to_cart a = PageFactory.initElements(driver, add_to_cart.class);
 		a.adding_cart(logger);
 		a.delete();
+		
 	}
 
 	@AfterTest

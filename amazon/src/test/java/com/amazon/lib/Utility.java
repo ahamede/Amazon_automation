@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.ErrorCodes;
 import org.testng.asserts.SoftAssert;
 
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class Utility {
 
 
@@ -18,6 +20,8 @@ public class Utility {
 	public static String DRIVER_PATH;
 	public static String reportpath;
 	public static String time;
+	public static ExtentTest logger;
+	
 
 	public Utility() {
 		try {
@@ -57,8 +61,7 @@ public class Utility {
 		{
 			System.out.println("Capture Failed "+e.getMessage());
 		}
-		
-		return path;
+return path;
 	}
 
 }
