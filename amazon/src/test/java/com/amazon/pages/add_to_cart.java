@@ -40,7 +40,7 @@ public class add_to_cart {
 		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
 	    driver.switchTo().window(tabs2.get(1));
 		Helper.getElementByXpath(driver, add_cart, 20).click();
-		WebElement cart_add_check=driver.findElement(cart_check);
+		WebElement cart_add_check=Helper.getElementByXpath(driver, cart_check, 5);
 		if(cart_add_check.isDisplayed()){
 			System.out.println("Item added to Cart");
 			logger.log(LogStatus.PASS, "Items Added to Cart");
