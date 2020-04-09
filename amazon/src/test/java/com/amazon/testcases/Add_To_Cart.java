@@ -10,6 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.amazon.lib.BrowserFactory;
+import com.amazon.lib.Utility;
 import com.amazon.pages.add_to_cart;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -23,7 +24,8 @@ public class Add_To_Cart {
 	@BeforeTest
 	@Parameters({ "browser", "url" })
 	public void setup(String browser, String url) {
-		driver = BrowserFactory.startBrowser(browser, url);
+		driver=BrowserFactory.startBrowser(browser, url);
+
 		report = new ExtentReports(System.getProperty("user.dir") + "\\ExtentReportResults.html");
 		logger = report.startTest(s);
 	}

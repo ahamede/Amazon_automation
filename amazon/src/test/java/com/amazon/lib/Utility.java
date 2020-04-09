@@ -14,7 +14,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 public class Utility {
 
-
+    static WebDriver driver;
 	public ErrorCodes errCol = new ErrorCodes();
 	public static SoftAssert sAssert = new SoftAssert();
 	public static String DRIVER_PATH;
@@ -63,5 +63,9 @@ public class Utility {
 		}
 return path;
 	}
+
+
+		
+		
 
 }

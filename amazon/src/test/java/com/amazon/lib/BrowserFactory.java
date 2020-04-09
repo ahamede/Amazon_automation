@@ -93,8 +93,8 @@ public class BrowserFactory {
 			Reporter.log("Incorrect 'Web Browser' name provided");
 
 		}
+		
 		driver.navigate().to(url);    
-
 return driver;
 	}
 
