@@ -14,6 +14,7 @@ import com.amazon.lib.Utility;
 import com.amazon.pages.add_to_cart;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class Add_To_Cart {
 
@@ -28,6 +29,8 @@ public class Add_To_Cart {
 
 		report = new ExtentReports(System.getProperty("user.dir") + "\\ExtentReportResults.html");
 		logger = report.startTest(s);
+		logger.log(LogStatus.INFO, "Browser : " + browser);
+		logger.log(LogStatus.INFO, "URL : " + url);
 	}
 
 	@Test
