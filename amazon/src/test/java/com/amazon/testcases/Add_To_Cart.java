@@ -42,9 +42,10 @@ public class Add_To_Cart {
 	}
 
 	@AfterTest
-	public void tearDownReport() {
-		driver.quit();
-		report.endTest(logger);
-		report.flush();
+	public void tearDownReport() 
+	{
+driver.quit();
+report.flush();
 	}
+
 }
