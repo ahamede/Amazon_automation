@@ -42,13 +42,14 @@ public class add_to_cart {
 		Helper.getElementByXpath(driver, add_cart, 20).click();
 		WebElement cart_add_check=Helper.getElementByXpath(driver, cart_check, 5);
 		if(cart_add_check.isDisplayed()){
+			
+			Utility.logPass(logger, "Items Added to the Cart");
 			System.out.println("Item added to Cart");
-			logger.log(LogStatus.PASS, "Items Added to Cart");
 		}
 		else{
 			System.out.println("Item not added to Cart");
-			logger.log(LogStatus.FAIL, "Items Not Added to Cart");
-			Utility.getScreenshot(driver);
+Utility.logFail(logger, "Items Not added to the Cart");
+Utility.getScreenshot(driver);
 		}		
 return driver;
 	}

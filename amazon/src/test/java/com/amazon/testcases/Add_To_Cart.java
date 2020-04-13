@@ -4,6 +4,8 @@ import java.awt.AWTException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -41,11 +43,27 @@ public class Add_To_Cart {
 		
 	}
 
-	@AfterTest
-	public void tearDownReport() 
-	{
-driver.quit();
-report.flush();
+	@AfterMethod
+	public void tearDownReport(ITestResult result,ExtentTest logger) {
+
+		System.out.println("Test in After Method");
+
+		if (result.getStatus() == ITestResult.FAILURE) {
+	
+			Utility.logFail(logger, result.getThrowable().getMessage());
+		}
+
+		if (result.getStatus() == ITestResult.SUCCESS) {
+
+			//logger.log(LogStatus.PASS, logger.addScreenCapture(Utility.CaptureScreenshot(driver)));
+
+			Utility.logPass(logger, "Test Completed Successfully");
+		}
+
+		report.endTest(logger);
+		driver.quit();
+
 	}
+
 
 }

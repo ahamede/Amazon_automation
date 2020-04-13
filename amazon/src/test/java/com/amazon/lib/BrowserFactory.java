@@ -41,7 +41,7 @@ public class BrowserFactory {
 
 			System.setProperty("webdriver.chrome.driver", DRIVER_PATH);
 
-/*			DesiredCapabilities capabilities = new DesiredCapabilities();
+			DesiredCapabilities capabilities = new DesiredCapabilities();
 
 			capabilities.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
 
@@ -52,7 +52,7 @@ public class BrowserFactory {
 			capabilities.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
 
 			// capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-*/
+
 			driver = new ChromeDriver();
 
 			driver.manage().deleteAllCookies();
