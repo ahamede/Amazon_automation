@@ -44,7 +44,7 @@ public class Add_To_Cart {
 	}
 
 	@AfterMethod
-	public void tearDownReport(ITestResult result,ExtentTest logger) {
+	public void tearDownReport(ITestResult result) {
 
 		System.out.println("Test in After Method");
 
@@ -61,6 +61,7 @@ public class Add_To_Cart {
 		}
 
 		report.endTest(logger);
+		report.flush();
 		driver.quit();
 
 	}
