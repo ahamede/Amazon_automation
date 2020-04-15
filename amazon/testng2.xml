@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  		<parameter name="dbClass" value="com.mysql.cj.jdbc.Driver" />
+  		<parameter name="dbUrl" value="jdbc:mysql://localhost:3306/selenium" />
+		<parameter name="user" value="root" />
+		<parameter name="password" value="Zaje_1234" />
+		<parameter name="query" value="select * from Information" />
+		<classes>
+			<class name="com.amazon.testcases.fetch_data_DB" />
+		</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
