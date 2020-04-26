@@ -30,7 +30,7 @@ public class add_to_cart {
 	}
    
 	By enter_search=By.xpath("//input[@type='text']");
-	By click_item=By.xpath("(//img[@data-image-index='0'])[1]");
+	By click_item=By.xpath("//img[@data-image-index='1']");
 	By add_cart=By.xpath("//input[@name='submit.add-to-cart']");
 	By cart_check=By.xpath("//h1[contains(.,'Added to Cart')]");
 	By size_select= By.xpath("//select[contains(@name,'name')]");
